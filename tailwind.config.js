@@ -14,6 +14,10 @@ module.exports = {
         },
         animation: {
           wiggle: 'wiggle 1s ease-in-out infinite ',
+          'spin-once': 'spin 1s linear',
+        },
+        fontFamily:{
+          Roboto: ['Roboto Mono', 'monospace'],
         }
     },
   },

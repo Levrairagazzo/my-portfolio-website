@@ -4,7 +4,7 @@ const Project = (props) => {
         <h1>
             {props.title}
         </h1>
-        <img alt="screenshot of project"></img>
+        <img src={props.gif}alt="screenshot of project" className=" mx-auto animate-spin-once"></img>
         <p>Description of the project</p>
         </> );
 }
