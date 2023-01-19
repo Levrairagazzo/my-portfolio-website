@@ -1,11 +1,20 @@
-import React from 'react'
+import React from 'react';
+import {
+  AiFillTwitterCircle,
+  AiFillLinkedin,
+  AiFillGithub,
+} from "react-icons/ai";
+
 
 function Footer() {
   return (
     <>
-     <footer class="bg-pink-300 text-gray-800 fixed inset-x-0 bottom-0 p-2 text-xs flex justify-between">
-        <div>
-           This is my footer.
+     <footer className="bg-pink-200 text-10xl relative inset-x-0 bottom-0 p-2 flex justify-center">
+        <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
+           <AiFillGithub/>
+           <AiFillLinkedin/>
+           <AiFillTwitterCircle/>           
+
         </div>
        
     </footer> 

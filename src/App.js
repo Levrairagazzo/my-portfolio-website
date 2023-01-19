@@ -9,14 +9,11 @@ import RouterComponent from './components/RouterComponent';
 function App() {
   return (
     <>
-      <div className='container'>
         <Routes>
           <Route path="/" element={<Home/>}/>          
           <Route path="/about" element={<About/>}/>
           <Route path="/projects" element={<Projects/>}/>
         </Routes>
-
-      </div>
     </>
   
      
