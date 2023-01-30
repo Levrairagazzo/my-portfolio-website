@@ -23,4 +23,15 @@ a {
   box-sizing: border-box;
 }
 
+.animate-slide-in {
+  animation: slide-in 0.6s ease-out;
+}
+@keyframes slide-in {
+  from {
+    transform: translate-y(-1000px);
+  }
+  to {
+    transform: translate-y(0);
+  }
+}
 

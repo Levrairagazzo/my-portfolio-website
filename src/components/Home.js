@@ -11,20 +11,28 @@ function Home() {
     <div className=' bg-slate-50 text-center p-10 py-10 min-h-screen'>
     
     <div className='flex flex-wrap my-10 max-w-7xl mx-auto'>
-    <h2 className="text-5xl py-2 text-teal-600 font-medium text-justify  mx-auto my-auto max-w-screen-md animate-wiggle font-Roboto">
-    Hi! I'm Sydney, Junior Full-Stack Developer, welcome to my website!
-    </h2>
+      <div className='text-5xl py-2 text-slate-700 font-medium text-justify  mx-auto my-auto max-w-screen-md font-Roboto'>
+      <h2 className="py-4">
+      Hi! I'm <span className='text-teal-600'>Sydney</span>.
+      </h2>
+      <h2 className="py-4">
+      <span className='text-teal-600'>Software Engineer</span> based in Oakland, CA.
+      </h2>
+      <h2 className="py-4">
+      Welcome to my website!
+      </h2>
+      </div>
+      
+    {/* <h2 className="text-5xl py-2 text-teal-600 font-medium mx-auto my-auto max-w-screen-md animate-wiggle font-Roboto test-justify">
+    Hi! I'm Sydney! Full Stack Developper based in Oakland,CA. Welcome to my website!
+    </h2> */}
       <img className=' rounded-full w-80 h-96 object-fil  mx-auto my-auto shadow-2xl' src={Sydney} alt='Photo_de_moi'></img>
     </div>
-    <button className=' bg-teal-500 rounded-full p-4 hover:text-gray-100 font-Roboto drop-shadow-xl'>
+    <button className=' bg-teal-500 rounded-full p-4 hover:text-gray-100 hover:scale-110 transition duration-300 ease-in-out font-Roboto drop-shadow-xl'>
     <Link className='cursor-pointer text-xl col-span-3   p-3 rounded-lg ' to='/About'>Learn more.</Link>
     </button>
 
   
-    {/* <p className='text-justify font-Roboto my-10 p-10 text-2xl max-w-7xl mx-auto'> I'm a Junior Software Engineer with experience in a range of programming languages including Java, Javascript, and Python, 
-        I am skilled in both front-end, back-end and mobile development.I am excited to connect with other professionals in the tech
-        industry and am open to new opportunities.
-    </p> */}
     </div>
     
     <Footer/>
