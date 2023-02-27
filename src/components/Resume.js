@@ -1,10 +1,10 @@
-import resume from "../assets/SG_SWE.pdf"
-import Navbar from "../Navbar";
+import resume from "../assets/SWE-SydneyG.pdf"
 import Footer from "./Footer";
+import Nav from './Nav';
 
 const Resume = () => {
     return ( <>
-    <Navbar/>
+    <Nav/>
      <iframe src={resume} className="min-h-screen min-w-full">
     </iframe>
     <Footer/>

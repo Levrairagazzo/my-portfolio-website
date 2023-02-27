@@ -1,13 +1,13 @@
-import Navbar from "../Navbar";
+import Nav from "./Nav";
 import Footer from "./Footer";
 import Skills from "./Skills";
 import Syd_restau from "../assets/Sydney_Restaurant.jpeg"
 
 const About = () => {
     return ( <div className="">
-            <Navbar/>
+            <Nav/>
             
-            <ul className="bg-slate-50  flex-col  px-6 md:px-36 py-10 min-h-screen leading-loose text-lg text-slate-700">
+            <ul className="bg-slate-50  flex-col  px-6 md:px-36 pt-10 md:pt-30 min-h-screen leading-loose text-lg text-slate-700">
             <li className="flex place-content-center">
             <h1 className=" font-Roboto text-5xl font-extrabold text-slate-800">About me </h1>
                 
@@ -36,7 +36,7 @@ Before attending Berkeley City College, I earned my Master’s degree in France 
             </li>
             <li className="flex flex-col " >
             <h1 className=' w-full font-Roboto text-4xl font-extrabold border-b-4 border-slate-800 mt-8 text-slate-800'> Interesting facts about me</h1>
-            <ul className="mt-6">
+            <ul className="mt-6 pb-10">
                 <li> * I'm an avid runner, I already ran 3 half-marathons and I'm now training for the Oakland Marathon. My goal is to run the 26.2 miles in less than 4 hours.</li>
                 <li> * I enjoy learning languages, I speak French and English fluently and I'm currently learning Italian and Spanish</li>
                 <li> * I'm based in Oakland, CA but I'm originally from France and also have lived in the UK and Ireland.</li>
