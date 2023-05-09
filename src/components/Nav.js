@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
-import {Link} from 'react-router-dom'
+import React, { useState, useContext } from 'react';
+import {Link} from 'react-router-dom';
+import { UserContext } from '../App';
 
 
 const Nav = () => {
@@ -9,6 +10,8 @@ const Nav = () => {
       {name:"Resume",link:"/resume"},
     ];
     let [open,setOpen]=useState(false);
+    // let [french,setFrench] = useState(false);
+    const {french, setFrench} = useContext(UserContext);
   return (
     <div className='drop-shadow-md w-full top-0 left-0 '>
       <div className='md:flex items-center justify-between bg-white py-4 md:px-10 px-7'>
@@ -18,6 +21,10 @@ const Nav = () => {
         <ion-icon name="home-outline"/>
         </Link>
         </span>
+        <div onClick={() => setFrench(!french)}>
+      {french && <div>French</div>}
+      {!french && <div>English</div>}
+        </div>
       </div>
       
       <div onClick={()=>setOpen(!open)} className='text-3xl absolute right-8 top-6 cursor-pointer md:hidden'>

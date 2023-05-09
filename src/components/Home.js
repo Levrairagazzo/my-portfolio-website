@@ -3,6 +3,7 @@ import Nav from './Nav';
 import Sydney from '../assets/Sydney_lac.jpeg';
 import Footer from './Footer';
 import { Link } from 'react-router-dom';
+import TestComponent from './TestComponent';
 
 function Home() {
   return (
@@ -16,7 +17,7 @@ function Home() {
       Hi! I'm <span className='text-teal-600'>Sydney</span>.
       </h2>
       <h2 className="py-4 text-center">
-      <span className='text-teal-600'>Software Engineer</span> based in Oakland, CA.
+      <span className='text-teal-600'>Software Engineer</span> based in France.
       </h2>
       <h2 className="py-4 text-center ">
       Welcome to my website!
@@ -30,7 +31,8 @@ function Home() {
 
   
     </div>
-    
+
+    <TestComponent/>
     <Footer/>
  </>
   )
