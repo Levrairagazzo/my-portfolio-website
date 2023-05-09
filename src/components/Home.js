@@ -32,7 +32,7 @@ function Home() {
   
     </div>
 
-    {/* <TestComponent/> */}
+    <TestComponent/>
     <Footer/>
  </>
   )
