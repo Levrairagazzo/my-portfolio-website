@@ -3,12 +3,7 @@ import Nav from './Nav';
 import Sydney from '../assets/Sydney_lac.jpeg';
 import Footer from './Footer';
 import { Link } from 'react-router-dom';
-<<<<<<< Updated upstream
-=======
-import ToggleLanguage from './ToggleLanguage';
 import { UserContext } from '../App';
-
->>>>>>> Stashed changes
 
 function Home() {
   const {french} = useContext(UserContext);
@@ -19,15 +14,6 @@ function Home() {
     
     <div className='flex flex-wrap mb-10 max-w-7xl mx-auto md:mt-32'>
       <div className='text-xl sm:text-5xl py-2 text-slate-700 font-medium text-justify  mx-auto my-auto max-w-screen-md font-Roboto'>
-<<<<<<< Updated upstream
-      <h2 className="py-4 text-center">
-      Hi! I'm <span className='text-teal-600'>Sydney</span>.
-      </h2>
-      <h2 className="py-4 text-center">
-      <span className='text-teal-600'>Software Engineer</span> based in Oakland, CA.
-      </h2>
-=======
-     
       {!french && 
       <>
        <h2 className="py-4 text-center">Hi! I'm <span className='text-teal-600'>Sydney</span>.
@@ -35,7 +21,6 @@ function Home() {
        <h2 className="py-4 text-center">
        <span className='text-teal-600'>Software Engineer</span> based in France.
        </h2>
->>>>>>> Stashed changes
       <h2 className="py-4 text-center ">
       Welcome to my website!
       </h2>
@@ -61,10 +46,7 @@ function Home() {
 
   
     </div>
-<<<<<<< Updated upstream
-    
-=======
->>>>>>> Stashed changes
+
     <Footer/>
  </>
   )

@@ -1,13 +1,8 @@
-<<<<<<< Updated upstream
-import React, { useState } from 'react'
-import {Link} from 'react-router-dom'
-
-=======
 import React, { useState, useContext } from 'react';
 import {Link} from 'react-router-dom';
 import { UserContext } from '../App';
 import ToggleLanguage from './ToggleLanguage';
->>>>>>> Stashed changes
+
 
 const Nav = () => {
     let Pages =[
@@ -16,11 +11,8 @@ const Nav = () => {
       {french: "CV", name:"Resume",link:"/resume"},
     ];
     let [open,setOpen]=useState(false);
-<<<<<<< Updated upstream
-=======
 
     const {french} = useContext(UserContext);
->>>>>>> Stashed changes
   return (
     <div className='drop-shadow-md w-full top-0 left-0 '>
       <div className='md:flex items-center justify-between bg-white py-4 md:px-10 px-7'>
@@ -30,10 +22,9 @@ const Nav = () => {
         <ion-icon name="home-outline"/>
         </Link>
         </span>
-<<<<<<< Updated upstream
-=======
+
         <ToggleLanguage/>
->>>>>>> Stashed changes
+
       </div>
       
       <div onClick={()=>setOpen(!open)} className='text-3xl absolute right-8 top-6 cursor-pointer md:hidden'>
