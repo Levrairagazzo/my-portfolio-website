@@ -17,6 +17,9 @@ function Footer() {
         <a href={"https://linkedin.com/in/sbgoeury"} rel="noreferrer" target="_blank" className="flex gap-4">
         <AiFillLinkedin className=' hover:text-teal-500'/>
         </a>
+         <a href='' rel="noreferrer" target="_blank"><AiFillTwitterCircle className=' hover:text-teal-500'/> </a>
+                     
+
         </div>
        
     </footer> 
