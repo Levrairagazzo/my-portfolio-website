@@ -1,4 +1,4 @@
-import resume from "../assets/CV.pdf"
+import resume from "../assets/SWE-SydneyG.pdf"
 import Footer from "./Footer";
 import Nav from './Nav';
 

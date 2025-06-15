@@ -10,13 +10,10 @@ import vsCode from "../assets/skills/vs-code.svg";
 import webpack from "../assets/skills/webpack.svg";
 import python from "../assets/skills/python-icon.svg";
 import java from "../assets/skills/java.svg";
-import { useContext } from 'react';
-import { UserContext } from '../App';
+
 
 
 const Skills = () => {
-
-  const {french} = useContext(UserContext);
   const languages = [
   { name: "HTML", img: html },
   { name: "CSS", img: css },
@@ -46,17 +43,15 @@ const Skills = () => {
 
 
   return ( <div className='flex flex-col w-full'>
-  <h1 className=' w-full font-Roboto text-4xl font-extrabold border-b-4 border-black mt-8'>
-     {french && "Mes compétences techniques"}{!french && "My skills"}
-  </h1>
+  <h1 className=' w-full font-Roboto text-4xl font-extrabold border-b-4 border-black mt-8'> My skills</h1>
   <ul>
-    <li> <h2 className='font-Robot text-xl place-content-center mt-8'>{!french && "Languages:"}{french && "Langages maitrisés:"}</h2>
+    <li> <h2 className='font-Robot text-xl place-content-center mt-8'>Languages:</h2>
       <div className='flex flex-wrap pt-6'>
         {displaySVG(languages)}
       </div>
     </li>
     <li>
-      <h2 className='font-Robot text-xl place-content-center mt-8'>{!french && "Frameworks and tools:"}{french && "Outils et frameworks:"}</h2>
+      <h2 className='font-Robot text-xl place-content-center mt-8'>Frameworks and tools:</h2>
       <div className='flex flex-wrap pt-6'>
         {displaySVG(otherTools)}
       </div>
